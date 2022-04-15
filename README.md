@@ -2,6 +2,6 @@
 デザインカンプからコーディングしたものです。
 
 # 使用言語
-HTML 
-Sass 
-JavaScript
+HTML  
+Sass  
+JavaScript 
