@@ -1,0 +1,34 @@
+//footer
+.footer {
+  &__inner {
+    background-image: url(../../images/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 0 0;
+  }
+  &__list {
+    writing-mode: vertical-rl;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  &__item {
+    margin-left: 35px;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+  &__img {
+    margin: 0 auto 50px;
+    width: 145px;
+  }
+  &__address {
+    margin-bottom: 60px;
+  }
+  &__copyright {
+    background-color: $cBlack;
+    color: $cWhite;
+    line-height: 94px;
+  }
+}

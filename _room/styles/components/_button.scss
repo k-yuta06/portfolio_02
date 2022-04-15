@@ -1,0 +1,30 @@
+// button
+.filled {
+  background-color: #383c3d;
+  color: $cWhite;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $cWhite;
+    color: #383c3d;
+    box-shadow: none;
+  }
+}
+
+//contact-btn
+.contact-btn {
+  display: block;
+  padding: 15px 22px;
+  background-color: $cContactBtn;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: top;
+    background-image: url(../../../images/calender.png);
+  }
+}

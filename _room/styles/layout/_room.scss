@@ -1,0 +1,133 @@
+//fv
+.fv {
+  position: relative;
+  margin: 80px 0 35px;
+  width: 100%;
+  height: 50vh;
+  max-height: 500px;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    color: $cWhite;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+//ぱんくずリスト
+.list {
+  margin: 0 0 50px 4vw;
+
+  @include mediaQuery('sm') {
+    margin: 0 0 100px 4vw;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:nth-child(2)::before {
+      content: ">";
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    & a:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+//room
+.room {
+  &-intro {
+    &__info {
+      text-align: center;
+      margin-bottom: 50px;
+
+      @include mediaQuery('sm') {
+        margin-bottom: 100px;
+      }
+    }
+  }
+  &-content {
+    @extend .flex;
+    @extend .side-margin;
+
+    @include mediaQuery('sm') {
+      position: relative;
+      margin-bottom: 100px;
+    }
+
+    &__img {
+      max-width: 80%;
+      margin: 0 auto;
+
+      @include mediaQuery('sm') {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45%;
+        margin: 0 auto;
+      }
+
+      &.img-right {
+        @include mediaQuery('sm') {
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+    &__inner {
+      position: relative;
+      top: -50px;
+      z-index: -1;
+      background-image: url(../../images/bg.png);
+      padding: 80px 30px 50px;
+      margin-bottom: 50px;
+
+      @include mediaQuery('sm') {
+        position: relative;
+        top: 60px;
+        left: 30%;
+        width: 67%;
+        z-index: -1;
+        background-image: url(../../images/bg.png);
+        padding: 50px 30px 50px 25%;
+        margin-bottom: 50px;
+      }
+
+      &.info-left {
+        @include mediaQuery('sm') {
+          left: auto;
+          right: 0;
+          padding: 50px 25% 50px 50px;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+//layout
+
+.intro {
+  @extend .mb-lg;
+  &__inner {
+    width: 100%;
+    background-image: url(../../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 65px 0;
+  }
+  &__content {
+    @extend .lh-2;
+    @extend .ls-high;
+    // writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: 0 auto;
+  }
+  span,
+  &__texts {
+    margin-top: 75px;
+  }
+  &__title {
+    @extend .font-lr;
+  }
+  &__info {
+    @extend .font-sm;
+  }
+  &__title,
+  &__info {
+    margin-left: 20px;
+
+    @include mediaQuery('sm') {
+      margin-left: 60px;
+    }
+    @include mediaQuery('md') {
+      margin-left: 120px;
+    }
+  }
+  &__name {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+}

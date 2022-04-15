@@ -1,0 +1,84 @@
+//header
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: block;
+  width: 100vw;
+  height: 80px;
+  box-sizing: border-box;
+  transition: background-color 0.4s;
+
+  &.scroll {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  &__inner {
+    @extend .side-margin;
+    @extend .flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+  &__logo {
+    display: inline-block;
+    width: 150px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__list {
+    display: none;
+    align-items: center;
+    color: $cWhite;
+    margin-left: 120px;
+
+    @include mediaQuery('md') {
+      display: flex;
+    }
+  }
+  &.scroll-nav &__list {
+    @include mediaQuery('md') {
+      position: absolute;
+      top: 0;
+    }
+  }
+  &__item {
+    @include mediaQuery('md') {
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      @include mediaQuery('md') {
+        margin-right: 0;
+      }
+    }
+    & a {
+      @include mediaQuery('md') {
+        cursor: pointer;
+      }
+    }
+  }
+  &__btn {
+    display: none;
+
+    @include mediaQuery('md') {
+      display: block;
+      color: $cWhite;
+      margin-left: auto;
+    }
+  }
+  .hamburger__btn {
+    position: relative;
+    z-index: 100;
+    margin-left: auto;
+
+    @include mediaQuery('md') {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+$cWhite: #fff;
+$cBlack: #000;
+$cMainTitle: #121212;
+$cSubTitle: #535353;
+$cBgGray: #eaebe6;
+$cWineRed: #904669;
+$cContactBtn: #978f10;
+$cMobileMenuHoverText: #978f10;
+$cBorder: #e7e7e7;
+$contentMaxWidth: 1070px;
+$sizes: xl, lg, md, sm, xs;
+$breakpoint: (
+  "xs": "screen and (min-width: 375px)",
+  "sm": "screen and (min-width: 600px)",
+  "md": "screen and (min-width: 960px)",
+  "lg": "screen and (min-width: 1280px)",
+  "xl": "screen and (min-width: 1980px)",
+) !default;

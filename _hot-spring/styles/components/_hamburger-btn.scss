@@ -1,0 +1,39 @@
+.hamburger__btn {
+  position: relative;
+  z-index: 100;
+  border: none;
+  cursor: pointer;
+
+  & > span {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: $cBlack;
+    margin-bottom: 9px;
+    transition: transform 0.7s;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.menu-open {
+  &.hamburger__btn {
+    & > span {
+      // background-color: $cWhite;
+
+      &:nth-child(1) {
+        transition-delay: 70ms;
+        transform: translateY(11px) rotate(135deg);
+      }
+      &:nth-child(2) {
+        transform: translateX(-18px) scale(0);
+      }
+      &:nth-child(3) {
+        transition-delay: 140ms;
+        transform: translateY(-11px) rotate(-135deg);
+      }
+    }
+  }
+}

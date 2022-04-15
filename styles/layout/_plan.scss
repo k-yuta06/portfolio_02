@@ -1,0 +1,79 @@
+.plan {
+  &__container {
+    background-image: url(../../images/bg02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+
+    @include mediaQuery('sm') {
+      padding: 120px 0;
+    }
+  }
+  &__inner {
+    @extend .side-margin;
+    max-width: $contentMaxWidth;
+    margin: 0 auto;
+  }
+  &__title {
+    @extend .font-lg;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @include mediaQuery('sm') {
+      margin-bottom: 65px;
+    }
+  }
+  &__list {
+    @extend .flex;
+    
+    @include mediaQuery('sm') {
+      justify-content: space-between;
+      align-items: normal;
+    }
+  }
+  &__content {
+    width: 80%;
+    margin: 0 auto;
+
+    @include mediaQuery('sm') {
+      width: calc((100% / 3) - 40px);
+    }
+  }
+  &__texts {
+    div {
+     @include mediaQuery('sm') {
+        display: flex;
+        flex-direction: column;
+     } 
+    }
+  }
+  &__img,
+  &__info {
+    margin-bottom: 30px;
+  }
+  &__img {
+    @include mediaQuery('sm') {
+      margin-bottom: 35px;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &_info:first-child {
+    flex-grow: 1;
+  }
+  &__info:last-child {
+    margin-bottom: 60px;
+
+    @include mediaQuery('sm') {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

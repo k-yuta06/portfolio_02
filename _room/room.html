@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お部屋 - 石井花壇 | 温海温泉旅館 【公式サイト】</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="./styles/css/style.css" />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="header__inner">
+          <a href="../index.html" class="header__logo">
+            <img src="./images/sub-header-logo.png" />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item"><a href="./room.html">お部屋</a></li>
+              <li class="header__item">
+                <a href="../_food/food.html">お料理</a>
+              </li>
+              <li class="header__item">
+                <a href="../_hot-spring/hot-spring.html">温泉</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- contact-btn -->
+          <div class="header__btn contact-btn">
+            <a href="#">宿泊予約</a>
+          </div>
+
+          <!-- hamburger-btn -->
+          <button class="hamburger__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- mobile-menu -->
+          <div class="header-container">
+            <nav class="mobile-menu">
+              <ul class="mobile-menu__main">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="./room.html">
+                    <span>お部屋</span>
+                    <span>Room</span>
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="../_food/food.html">
+                    <span>お料理</span>
+                    <span>Food</span>
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a
+                    class="mobile-menu__link"
+                    href="../_hot-spring/hot-spring.html"
+                  >
+                    <span>温泉</span>
+                    <span>Hot Spring</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- modal -->
+      <div class="modal">
+        <div class="modal-wrapper">
+          <div class="modal-container">
+            <div class="modal__cover"></div>
+            <div class="modal__inner">
+              <button class="modal__closeBtn">
+                <img src="../images/close.png" alt="閉じるボタン" />
+              </button>
+              <h2 class="modal__title">宿泊予約</h2>
+              <div class="modal__item">
+                <label for="name" class="modal__subTitle">お名前</label>
+                <input
+                  id="name"
+                  type="text"
+                  class="modal__text"
+                  placeholder="例:石井正悟"
+                />
+              </div>
+              <div class="modal__item">
+                <label for="email" class="modal__subTitle"
+                  >メールアドレス</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  class="modal__text"
+                  placeholder="例:Example@example.com "
+                />
+              </div>
+              <div class="modal__item">
+                <label for="plan" class="modal__subTitle"
+                  >ご希望プラン(空いているプランのみ表示されます)</label
+                >
+                <input
+                  id="plan"
+                  type="plan"
+                  class="modal__text"
+                  placeholder="プランを選択してください"
+                />
+              </div>
+              <div class="modal__item">
+                <label for="" class="modal__subTitle">日時選択</label>
+                <input
+                  type="text"
+                  class="modal__text"
+                  placeholder="日時を選択してください"
+                />
+              </div>
+              <div class="modal__submitBtn">
+                <input
+                  type="submit"
+                  value="送信する"
+                  class="modal__submit filled"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <!-- fv -->
+        <div class="fv">
+          <div class="fv__img">
+            <img src="./images/oheya-header.jpg" />
+          </div>
+          <h2 class="fv__title">お部屋</h2>
+        </div>
+
+        <div class="container">
+          <!-- ぱんくずリスト -->
+          <div class="list">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+              <!-- 1つめ -->
+              <li
+                class="list__item"
+                itemprop="itemListElement"
+                itemscope
+                itemtype="https://schema.org/ListItem"
+              >
+                <a itemprop="item" href="../index.html">
+                  <span itemprop="name">トップ</span>
+                </a>
+                <meta itemprop="position" content="1" />
+              </li>
+
+              <!-- 2つめ -->
+              <li
+                class="list__item"
+                itemprop="itemListElement"
+                itemscope
+                itemtype="https://schema.org/ListItem"
+              >
+                <a itemprop="item" href="./index.html">
+                  <span itemprop="name">お部屋</span>
+                </a>
+                <meta itemprop="position" content="2" />
+              </li>
+            </ol>
+          </div>
+
+          <!-- room -->
+          <section class="room">
+            <div class="room-intro">
+              <p class="room-intro__info">
+                創業より受け継がれてきた石井花壇の和の造り<br />
+                温海の雄大な絶景を堪能していただけるように設計された客室<br />
+                ゆるやかに流れ行く時間に身を委ねて
+              </p>
+            </div>
+            <div class="room-content">
+              <div class="room-content__img">
+                <img src="./images/oheya01.jpg" alt="" />
+              </div>
+              <div class="room-content__inner">
+                <div class="room-content__info">
+                  <h3 class="room-content__title">温泉付き客室</h3>
+                  <p class="room-content__text">
+                    温海の源泉かけ流し露天風呂付き客室になります。<br />
+                    あなただけの上質な安らぎのひとときを。
+                  </p>
+                  <p class="room-content__text">
+                    ＊部屋数に限りがございます。<br />
+                    ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="room-content">
+              <div class="room-content__img img-right">
+                <img src="./images/oheya02.jpg" alt="" />
+              </div>
+              <div class="room-content__inner info-left">
+                <div class="room-content__info">
+                  <h3 class="room-content__title">庭園付き客室</h3>
+                  <p class="room-content__text">
+                    庭園付きの客室になります。<br />
+                    お庭を見ながら、ほっとするひとときをお過ごしください。
+                  </p>
+                  <p class="room-content__text">
+                    ＊お庭は複数のお客様と囲む形になります。<br />
+                    ＊部屋数に限りがあります。<br />
+                    ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="room-content">
+              <div class="room-content__img">
+                <img src="./images/oheya03.jpg" alt="" />
+              </div>
+              <div class="room-content__inner">
+                <div class="room-content__info">
+                  <h3 class="room-content__title">温泉付き客室</h3>
+                  <p class="room-content__text">
+                    最もベーシックな客室になります。伝統の中にモダンさを取り入れた
+                    内装となっており、とても過ごしやすくしていただけます。
+                  </p>
+                  <p class="room-content__text">
+                    ＊全室お部屋より日本海を望むことができます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#">お部屋</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">お料理</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">温泉</a>
+            </li>
+          </ul>
+          <div class="footer__img">
+            <img src="../images/footer-logo.png" alt="ロゴ画像" />
+          </div>
+          <address class="footer__address">
+            <span style="margin-right: 20px">〒000-0000</span
+            >山形県鶴岡市xxxxxxxxxxx<br />
+            <span style="margin-right: 20px">TEL.000-0000-0000</span>
+            FAX.00-0000-0000
+          </address>
+          <div class="footer__copyright">
+            <small>Copyright © 石井花壇 All Rights Reserved.</small>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- js -->
+    <script src="./scripts/libs/mobile-menu.js"></script>
+    <script src="./scripts/room.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+// * {
+//   border: 1px solid red;
+// }
+body {
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”,
+    “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”,
+    “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+body.hidden {
+  overflow: hidden;
+}
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+main {
+  flex: 1;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+//font-size
+.font-sm {
+  font-size: 14px;
+}
+.font-md {
+  font-size: 18px;
+}
+.font-lr {
+  font-size: 20px;
+}
+.font-lg {
+  font-size: 24px;
+}
+@include mediaQuery('md') {
+  .font-sm {
+    font-size: 16px;
+  }
+  .font-md {
+    font-size: 18px;
+  }
+  .font-lr {
+    font-size: 20px;
+  }
+  .font-lg {
+    font-size: 28px;
+  }
+}
+@include mediaQuery('lg') {
+  .font-sm {
+    font-size: 16px;
+  }
+  .font-md {
+    font-size: 18px;
+  }
+  .font-lr {
+    font-size: 20px;
+  }
+  .font-lg {
+    font-size: 36px;
+  }
+}
+
+//margin-size
+.mb-sm {
+  margin-bottom: 20px !important;
+}
+.mb-md {
+  margin-bottom: 25px !important;
+}
+.mb-lr {
+  margin-bottom: 45px !important;
+}
+.mb-lg {
+  margin-bottom: 60px !important;
+}
+.side-margin {
+  margin: 0 4vw;
+}
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+}
+.title-logo {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.main-title {
+  @extend .font-lg;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: $cMainTitle;
+}
+.sub-title {
+  @extend .font-sm;
+  color: $cSubTitle;
+}
+.text-bold {
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  @include mediaQuery('sm') {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.lh-2 {
+  line-height: 1.5;
+
+  @include mediaQuery('md') {
+    line-height: 2;
+  } 
+}
+.ls-high {
+  letter-spacing: 0.3em;
+}

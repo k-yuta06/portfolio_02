@@ -1,0 +1,57 @@
+//hero-slider
+.hero {
+  position: relative;
+  z-index: 80;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  color: $cWhite;
+
+  &__texts {
+    @extend .font-lg;
+    @extend .ls-high;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    line-height: 2;
+    z-index: 90;
+
+    @include mediaQuery('md') {
+      top: 19%;
+      right: 26%;
+      transform: none;
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    .slide-img {
+      width: 100%;
+      height: 100%;
+
+      & img {
+        height: 100%;
+      }
+    }
+  }
+  .swiper-slide-active .slide-img,
+  .swiper-slide-duplicate-active .slide-img,
+  .swiper-slide-prev .slide-img {
+    // animation: zoomUp 10s linear 0s infinite normal both;
+    @include zoomUp;
+  }
+  @keyframes zoomUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.12);
+    }
+  }
+}
